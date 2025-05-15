@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Furkan Aksoy - Full Stack Developer - EN</title>
+        <link rel="stylesheet" href="css/style-en.css">
+    </head>
+    
+    <header>
+        <div>
+            <p id="section4">Designer:duyguyasuz@gmail.com</p>
+        </div>
+    </header>
+    
+    <body>
+        
+        <a href="index.html" class="language-button">TR</a>
+        
+        <div class="hamburger-menu" onclick="menuyuAcKapat()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="menu-icerik" id="menu-icerik">
+            <a href="#section1" onclick="menuyuKapat()">Desktop Software Skills</a>
+            <a href="#section2" onclick="menuyuKapat()">Database and Web Development Skills</a>
+            <a href="#section3" onclick="menuyuKapat()">About Me</a>
+        </div>
+        
+        <section id="desktop-skills" class="skills-section">
+            <div class="section-title-card">
+                <h2>Software Skills</h2>
+            </div>
+
+            <br><br><br><br><br><br><br>
+            
+            <div class="cards-container">
+                <div class="tech-card mavi">
+                    <h3>C#</h3>
+                    <p>string c = "sharp"</p>
+                </div>
+                <div class="tech-card beyaz">
+                    <h3>XAML</h3>
+                    <p>Label Content = "XAML"</p>
+                </div>
+                <div class="tech-card mor">
+                    <h3>T-SQL</h3>
+                    <p>DECLARE @tSql NVARCHAR(MAX)</p>
+                </div>
+                <div class="tech-card yeşil">
+                    <h3>MySQL</h3>
+                    <p>SET @mySql</p>
+                </div>
+                <div class="tech-card turuncu">
+                    <h3>HTML</h3>
+                    <p>&lt;p&gt; html &lt;/p&gt;</p>
+                </div>
+                <div class="tech-card koyu-mor">
+                    <h3>PHP</h3>
+                    <p>echo "Php"</p>
+                </div>
+            </div>
+        </section>
+
+        <div>
+            <img src="images/en2.png" alt="Desktop" id="section1">
+            <img src="images/en3.png" alt="C# Code Screen 1">
+            <img src="images/en4.png" alt="C# Code Screen 2">
+            <img src="images/en5.png" alt="C# Code Screen 3">
+            <img src="images/en6.png" alt="C# Code Screen 4">
+            <img src="images/en7.png" alt="Database" id="section2">
+            <img src="images/en8.png" alt="T-SQL">
+            <img src="images/en9.png" alt="MySQL">
+            <img src="images/en10.png" alt="Php-HTML-CSS-JavaScript">
+            <img src="images/en11.png" alt="About Me" id="section3">
+        </div>
+
+        <div class="sticky-bar">
+            <a href="#section4" onclick="basaDon()"><img src="yukaridon.png" ></a>
+            <a href="mailto:furkanaksoydev@gmail.com">Mail</a>
+            <a href="https://wa.me/905309582252">WhatsApp</a>
+        </div>
+        
+        <script>
+            function menuyuAcKapat() {
+                const menu = document.getElementById('menu-icerik');
+                menu.classList.toggle('aktif');
+            }
+
+            function menuyuKapat() {
+                const menu = document.getElementById('menu-icerik');
+                menu.classList.remove('aktif');
+            }
+
+            document.querySelectorAll('.menu-icerik a').forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const targetSection = document.querySelector(this.getAttribute('href'));
+                    const offset = window.innerWidth <= 768 ? 5 : 120;
+
+                    window.scrollTo({
+                        top: targetSection.offsetTop + offset,
+                        behavior: 'smooth'
+                    });
+
+                    menuyuKapat();
+                });
+            });
+        </script>
+        
+    </body>
+    
+    <footer class="modern-footer">
+        <div class="footer-inner">
+            <div class="footer-logo">
+                <img src="resimler/faksoylogo.png" alt="FAksoy Logo">
+            </div>
+            <p>2025 Furkan Aksoy | Portföyümü incelediğiniz için teşekkür ederim.</p>
+        </div>
+    </footer>
+</html>
