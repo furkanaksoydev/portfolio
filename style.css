@@ -14,7 +14,7 @@ body { background-color: var(--bg-dark); color: var(--text-main); line-height: 1
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
 
 nav { position: fixed; top: 0; width: 100%; z-index: 1000; padding: 24px 24px; transition: 0.4s cubic-bezier(0.16, 1, 0.3, 1); }
-nav.active { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(12px); padding: 16px 0; border-bottom: 1px solid var(--border); }
+nav.active { background: rgba(5, 5, 5, 0.8); backdrop-filter: blur(12px); padding: 16px 16px; border-bottom: 1px solid var(--border); }
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
 .logo { font-size: 20px; font-weight: 800; text-decoration: none; color: var(--text-main); letter-spacing: -0.5px; }
 .logo span { color: var(--accent); }
@@ -68,4 +68,4 @@ footer { padding: 120px 0 60px; background: #020202; }
 .social-links a { color: var(--text-sub); font-size: 20px; transition: 0.3s; }
 .social-links a:hover { color: var(--accent); }
 
-@media (max-width: 768px) { .nav-links { display: none; } .project-grid { grid-template-columns: 1fr; } .hero{ padding:15px; } .hero h1 { font-size: 64px; } }
+@media (max-width: 768px) { .nav-links { display: none; } .project-grid { grid-template-columns: 1fr; } .hero { padding:15px; } .hero h1 { font-size: 64px; } }
