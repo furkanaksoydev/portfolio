@@ -68,4 +68,4 @@ footer { padding: 120px 0 60px; background: #020202; }
 .social-links a { color: var(--text-sub); font-size: 20px; transition: 0.3s; }
 .social-links a:hover { color: var(--accent); }
 
-@media (max-width: 768px) { .nav-links { display: none; } .project-grid { grid-template-columns: 1fr; } .hero h1 { font-size: 64px; } }
+@media (max-width: 768px) { .nav-links { display: none; } .project-grid { grid-template-columns: 1fr; } .hero{ padding:15px; } .hero h1 { font-size: 64px; } }
