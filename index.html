@@ -1,125 +1,163 @@
 <!DOCTYPE html>
-<html lang="tr">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Furkan Aksoy - Full Stack Developer - TR</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    
-    <header>
-        <div>
-            <p id="section4"></p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furkan Aksoy | Full-Stack Architect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">FURKAN<span>AKSOY</span></a>
+            <ul class="nav-links">
+                <li><a href="#services">Expertise</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#web-projects">Web</a></li>
+                <li><a href="#projects">Software</a></li>
+                <li><a href="#contact" class="nav-cta">Work With Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <div class="badge">AVAILABLE FOR REMOTE WORK</div>
+            <h1>Architecting Systems, <span class="gradient-text">Solving Complexity.</span></h1>
+            <p>Full-Stack Software Engineer specializing in enterprise desktop solutions and high-performance web architectures. Turning business bottlenecks into scalable digital assets.</p>
+            <div class="hero-actions">
+                <a href="#web-projects" class="btn-main">View Portfolio</a>
+                <a href="https://github.com/furkanaksoydev" target="_blank" class="btn-sub"><i class="fab fa-github"></i> Codebase</a>
+            </div>
         </div>
     </header>
-    
-    <body>
-        
-        <a href="index-en.html" class="language-button">EN</a>
-        
-        <div class="hamburger-menu" onclick="menuyuAcKapat()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
 
-        <div class="menu-icerik" id="menu-icerik">
-            <a href="#section1" onclick="menuyuKapat()">Masaüstü Yazılım Becerileri</a>
-            <a href="#section2" onclick="menuyuKapat()">Veri Tabanı ve Web Yazılım Becerileri</a>
-            <a href="#section3" onclick="menuyuKapat()">Hakkımda</a>
-        </div>
-        
-        <section id="desktop-skills" class="skills-section">
-            <div class="section-title-card">
-                <h2>Yazılım Becerileri</h2>
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Engineering Excellence</h2>
+                <p>Tailored solutions built with precision and modern architectural patterns.</p>
             </div>
-
-            <br><br><br><br><br><br><br>
-            
-            <div class="cards-container">
-                <div class="tech-card mavi">
-                    <h3>C#</h3>
-                    <p>string c = "sharp"</p>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-microchip"></i></div>
+                    <h3>Desktop Systems</h3>
+                    <p>Building robust POS and ERP systems using C# .NET 8 WPF with strict MVVM patterns and Dapper ORM for maximum speed.</p>
                 </div>
-                <div class="tech-card beyaz">
-                    <h3>XAML</h3>
-                    <p>Label Content = "XAML"</p>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-database"></i></div>
+                    <h3>Backend Architecture</h3>
+                    <p>Designing relational database schemas and high-throughput PHP APIs optimized for complex data grouping and filtering.</p>
                 </div>
-                <div class="tech-card mor">
-                    <h3>T-SQL</h3>
-                    <p>DECLARE @tSql NVARCHAR(MAX)</p>
-                </div>
-                <div class="tech-card yeşil">
-                    <h3>MySQL</h3>
-                    <p>SET @mySql</p>
-                </div>
-                <div class="tech-card turuncu">
-                    <h3>HTML</h3>
-                    <p>&lt;p&gt; html &lt;/p&gt;</p>
-                </div>
-                <div class="tech-card koyu-mor">
-                    <h3>PHP</h3>
-                    <p>echo "Php"</p>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-mobile-screen"></i></div>
+                    <h3>Interactive UI</h3>
+                    <p>Creating dependency-free JavaScript animations and performance-first hybrid mobile applications using React Native.</p>
                 </div>
             </div>
-        </section>
-        
-        <div>
-            <img src="resimler/tr2.png" alt="Masaüstü" id="section1">
-            <img src="resimler/tr3.png" alt="C# Kod Ekranı 1">
-            <img src="resimler/tr4.png" alt="C# Kod Ekranı 2">
-            <img src="resimler/tr5.png" alt="C# Kod Ekranı 3">
-            <img src="resimler/tr6.png" alt="C# Kod Ekranı 4">
-            <img src="resimler/tr7.png" alt="Veritabanı" id="section2">
-            <img src="resimler/tr8.png" alt="T-SQL">
-            <img src="resimler/tr9.png" alt="MySQL">
-            <img src="resimler/tr10.png" alt="Php-HTML-CSS-JavaScript">
-            <img src="resimler/tr11.png" alt="Hakkımda" id="section3">
         </div>
-        
-        <div class="sticky-bar">
-            <a href="#section4" onclick="basaDon()"><img src="yukaridon.png" ></a>
-            <a href="mailto:furkanaksoydev@gmail.com">Mail</a>
-            <a href="https://wa.me/905309582252">WhatsApp</a>
-        </div>
-        
-        <script>
-            function menuyuAcKapat() {
-                const menu = document.getElementById('menu-icerik');
-                menu.classList.toggle('aktif');
-            }
+    </section>
 
-            function menuyuKapat() {
-                const menu = document.getElementById('menu-icerik');
-                menu.classList.remove('aktif');
-            }
-
-            document.querySelectorAll('.menu-icerik a').forEach(link => {
-                link.addEventListener('click', function(e) {
-                    e.preventDefault();
-
-                    const targetSection = document.querySelector(this.getAttribute('href'));
-                    const offset = window.innerWidth <= 768 ? 5 : 120;
-
-                    window.scrollTo({
-                        top: targetSection.offsetTop + offset,
-                        behavior: 'smooth'
-                    });
-
-                    menuyuKapat();
-                });
-            });
-        </script>
-
-    </body>
-    
-    <footer class="modern-footer">
-        <div class="footer-inner">
-            <div class="footer-logo">
-                <img src="resimler/faksoylogo.png" alt="FAksoy Logo">
+    <section id="stack" class="stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Tech Stack</h2>
             </div>
-            <p>2025 Furkan Aksoy | Portföyümü incelediğiniz için teşekkür ederim.</p>
+            <div class="stack-grid">
+                <div class="stack-card"><span>C# .NET 8</span></div>
+                <div class="stack-card"><span>WPF / MVVM</span></div>
+                <div class="stack-card"><span>PHP 8+</span></div>
+                <div class="stack-card"><span>T-SQL / MySQL</span></div>
+                <div class="stack-card"><span>Dapper ORM</span></div>
+                <div class="stack-card"><span>SQLite</span></div>
+                <div class="stack-card"><span>Vanilla JS</span></div>
+                <div class="stack-card"><span>React Native</span></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="web-projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Commercial Web Showcase</h2>
+                <p>Tailor-made web solutions with focused SEO architecture and conversion-optimized UX.</p>
+            </div>
+            <div class="project-grid">
+                <div class="project-box">
+                    <div class="p-tag">Gastronomy & Branding</div>
+                    <h3>Kaptan Döner & Tantuni</h3>
+                    <p>A full digital ecosystem including a high-performance menu interface, cross-platform mobile app integration, and "Pending Wrap" campaign management.</p>
+                    <div class="p-tech">Custom PHP | Vanilla JS | SEO Architecture</div>
+                    <a href="http://www.kaptandonertantuni.com/" target="_blank" class="p-link">Live Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-box">
+                    <div class="p-tag">E-Commerce & Luxury</div>
+                    <h3>Zincir Takı</h3>
+                    <p>A bespoke e-commerce platform with complex relational database management, multi-layered product filtering, and dynamic image gallery systems.</p>
+                    <div class="p-tech">PHP | MySQL | Dynamic Filtering | Cloudinary</div>
+                    <a href="https://zincirtr.com/" target="_blank" class="p-link">Live Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-box">
+                    <div class="p-tag">Industrial Logistics</div>
+                    <h3>AL-MU Nakliyat</h3>
+                    <p>Service-oriented corporate web architecture featuring dynamic route-based SEO pages and instant lead generation modules.</p>
+                    <div class="p-tech">Tailwind CSS | Lead Gen | Technical SEO</div>
+                    <a href="https://istanbulizmiralmunakliyat.com/" target="_blank" class="p-link">Live Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project-box">
+                    <div class="p-tag">Craftsmanship & Services</div>
+                    <h3>Taşfırın Ustası AL-MU</h3>
+                    <p>A localized service platform optimized for high search intent keywords, featuring modern UI components and high-conversion contact funnels.</p>
+                    <div class="p-tech">IDN Domain Handling | Mobile UX | SEO</div>
+                    <a href="https://xn--tafrnustas-zubbg74d.net/" target="_blank" class="p-link">Live Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects" style="background: #020202;">
+        <div class="container">
+            <div class="section-header">
+                <h2>Software & Architecture</h2>
+            </div>
+            <div class="project-grid">
+                <div class="project-box">
+                    <div class="p-tag">Enterprise Desktop</div>
+                    <h3>Lavira AkyaPOS</h3>
+                    <p>A full-scale restaurant management system featuring 3rd party API integrations (TrendyolGo), local database optimization with Dapper, and secure licensing architecture.</p>
+                    <div class="p-tech">C# | WPF | Dapper | SQLite | .NET 8</div>
+                    <a href="https://github.com/furkanaksoydev" target="_blank" class="p-link">View Repository <i class="fas fa-code"></i></a>
+                </div>
+                <div class="project-box">
+                    <div class="p-tag">Core Architecture</div>
+                    <h3>Backend Showcase</h3>
+                    <p>Relational SQL modeling and performance-first PHP controller structures for large-scale e-commerce datasets.</p>
+                    <div class="p-tech">PHP | MySQL | OOP | Schema Design</div>
+                    <a href="https://github.com/furkanaksoydev" target="_blank" class="p-link">View Repository <i class="fas fa-code"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <h2>Have a project in mind?</h2>
+                <a href="mailto:furkanaksoydev@gmail.com" class="email-link">furkanaksoydev@gmail.com</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Furkan Aksoy. Built with Performance-First Logic.</p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/furkan-aksoy-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/905060678915" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
